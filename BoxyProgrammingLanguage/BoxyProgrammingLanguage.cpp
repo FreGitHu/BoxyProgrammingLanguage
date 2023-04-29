@@ -1,12 +1,18 @@
-﻿// BoxyProgrammingLanguage.cpp : Defines the entry point for the application.
-//
+﻿
 
 #include "BoxyProgrammingLanguage.h"
 
 using namespace std;
 
+void help() {
+
+}
+
 int main(int argc, char *argv[])
 {
-	cout << "Hello CMake." << endl;
+	const char* mode = argv[1];
+	if (mode == "help"){
+		help()
+	};
 	return 0;
 }
