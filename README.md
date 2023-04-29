@@ -5,7 +5,7 @@ The Boxy Programming Launage
 Check the Wiki for a guide
 
 ## Special Functions
-> You don't need to import std.box to use these
+> You don't need to import `std.box` to use these
 ### free()
 
 Frees an id() of an object.

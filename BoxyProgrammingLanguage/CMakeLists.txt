@@ -2,6 +2,7 @@
 # project specific logic here.
 #
 cmake_minimum_required (VERSION 3.8)
+include(CTest)
 
 # Add source to this project's executable.
 add_executable (BoxyProgrammingLanguage "BoxyProgrammingLanguage.cpp" "BoxyProgrammingLanguage.h")
@@ -11,3 +12,7 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
 endif()
 
 # TODO: Add tests and install targets if needed.
+add_test(NAME RUN_EXEC
+COMMAND BoxyProgrammingLanguage)
+set_property(TEST RUN_EXEC
+PROPERTY WILL_FAIL TRUE)
