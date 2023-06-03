@@ -1,18 +1,15 @@
 #ifndef BoxyASTH
 #define BoxyASTH
+#include<stdint.h>
 namespace BoxyAST {
-	enum NodeType {
-		UndefinedType
-	};
 	class Node
 	{
 	public:
 		Node();
 		~Node();
-		NodeType type;
 
 	private:
-
+		uint16_t lineno;
 	};
 
 	Node::Node()
