@@ -8,11 +8,12 @@ namespace BoxyAST {
 		Node();
 		~Node();
 		Node* body;
+		uint8_t bodyl;
 	private:
 		uint16_t lineno;
 	};
 
-	Node::Node()
+	Node::Node(uint16_t lineno)
 	{
 	}
 
