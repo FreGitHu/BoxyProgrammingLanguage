@@ -20,6 +20,24 @@ namespace BoxyAST {
 	Node::~Node()
 	{
 	}
+
+	class NodeIf :: Node
+	{
+	public:
+		NodeIf();
+		~NodeIf();
+
+	private:
+
+	};
+
+	NodeIf::NodeIf()
+	{
+	}
+
+	NodeIf::~NodeIf()
+	{
+	}
 }
 
 #endif // !BoxyASTH
