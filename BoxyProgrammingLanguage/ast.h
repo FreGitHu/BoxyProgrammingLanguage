@@ -7,7 +7,7 @@ namespace BoxyAST {
 	public:
 		Node();
 		~Node();
-
+		Node* body;
 	private:
 		uint16_t lineno;
 	};
